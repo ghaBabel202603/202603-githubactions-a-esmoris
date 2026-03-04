@@ -10,17 +10,17 @@ jobs:
               run: |
                   echo "Este trabajo se ejecuta en un Runner de Ubuntu" 
                   echo "${{runner.os}}"
-    windows-echo:
-        runs-on: windows-latest
-        steps:
-            - name: Mostrar SO
-              run: |
-                  echo "Este trabajo se ejecuta en un Runner de Windows" 
-                  echo "${{runner.os}}"
-    mac-echo:
-        runs-on: macos-latest
-        steps:
-            - name: Mostrar SO
-              run: |
-                  echo "Este trabajo se ejecuta en un Runner MacOS" 
-                  echo "${{runner.os}}"
+    # windows-echo:
+    #     runs-on: windows-latest
+    #     steps:
+    #         - name: Mostrar SO
+    #           run: |
+    #               echo "Este trabajo se ejecuta en un Runner de Windows" 
+    #               echo "${{runner.os}}"
+    # mac-echo:
+    #     runs-on: macos-latest
+    #     steps:
+    #         - name: Mostrar SO
+    #           run: |
+    #               echo "Este trabajo se ejecuta en un Runner MacOS" 
+    #               echo "${{runner.os}}"
