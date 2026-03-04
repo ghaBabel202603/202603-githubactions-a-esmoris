@@ -12,8 +12,8 @@ jobs:
             - name: Node Setup
               uses: actions/setup-node@v4 
             - name: Install Dependencies
-              working-directory: 04-using-actions/react-app
+              working-directory: 04-using-actions/my-app
               run: npm ci
             - name: Run Unit Tests
-              working-directory: 04-using-actions/react-app
+              working-directory: 04-using-actions/my-app
               run: npm run test
