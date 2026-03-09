@@ -3,7 +3,8 @@ run-name: 07 - Contexts | DEBUG - ${{ inputs.debug }}
 on: 
     push:
     workflow_dispatch:
-        
+env:
+    DEBUG_MODE: true
 jobs:
     echo-data:
         runs-on: ubuntu-latest
