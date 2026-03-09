@@ -5,3 +5,4 @@ Ejercicios:
  - [Act. Types](./ejercicios/06-activityTypes.md)
 
 Actividad 6: primera actualización en rama `feat-1-act-Types`.
+Actividad 6: segunda actualización para probar evento `synchronize` en el PR.
