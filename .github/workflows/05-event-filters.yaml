@@ -1,7 +1,5 @@
 name: 05 - Event Filters
-on:
-    push:
-        branches: [main]
+on: [workflow_dispatch]
 
 jobs:
     echo:
