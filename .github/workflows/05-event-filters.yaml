@@ -1,0 +1,9 @@
+name: 05 - Event Filters
+on: [workflow_dispatch]
+
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Message
+              run: echo "Running whenever branch is main"
