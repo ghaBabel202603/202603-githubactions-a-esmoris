@@ -1,0 +1,17 @@
+name: 10 - Functions
+on: [pull_request, workflow_dispatch]
+jobs:
+    demo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Failing step
+              run: exit 1
+            - name: Run on success
+              if: success()
+              run: echo Success step
+            - name: Run on failure
+              if: failure()
+              run: echo Run on failure
+            - name: Always step
+              if: always()
+              run: echo Always step
