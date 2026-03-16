@@ -1,0 +1,21 @@
+name: 10-2 - Working with Environments
+
+on:
+  workflow_dispatch:
+    inputs:
+      target-env:
+        description: Environment to deploy
+        type: environment
+        required: true
+        default: pre
+
+run-name: Deploy to ${{ inputs.target-env }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.target-env }}
+
+    steps:
+      - name: Show environment
+        run: echo "Deploying to ${{ inputs.target-env }}"
