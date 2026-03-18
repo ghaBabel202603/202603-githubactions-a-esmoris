@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
     deploy:
-        uses: mjbarrera8/202603-githubactions-mjbarrera8/.github/workflows/16-1-reusable-workflow.yaml@main
+        uses: mjbarrera8/misc/.github/workflows/16-1-reusable-workflow.yaml@main
         with:
             target-directory: 'src'
     print-outputs:
